@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5983B6"
+    tools:context=".AddActivity"
+    android:orientation="vertical"
+    android:padding="20sp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:text="Add goal to be achieved"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:layout_width="72dp"
+        android:layout_height="44dp"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+       android:layout_marginTop="25sp"/>
+
+    <EditText
+        android:id="@+id/goalTitle"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:autofillHints="title"
+        android:background="@color/white"
+        android:hint="Enter goal title"
+        android:inputType="textPersonName"
+        android:padding="9sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="10dp"
+        android:text="Description"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/goalDescrp"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:autofillHints="description"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Enter goal description"
+        android:padding="9sp"
+        android:inputType="text|textAutoCorrect|textAutoComplete" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:paddingBottom="10dp"
+                android:text="Start dte"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:layout_width="160sp"
+                android:layout_height="41dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="01/12/2021"
+                android:inputType="date"
+                android:paddingLeft="10dp"
+                android:autofillHints="start date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:paddingBottom="10dp"
+                android:text="End date"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/goalEndDate"
+                android:layout_width="160sp"
+                android:layout_height="41dp"
+                android:autofillHints="end date"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="01/12/2021"
+                android:inputType="date"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="52sp"
+        android:text="SAVE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#08399F"
+        android:layout_margin="30sp"
+        android:alpha="0.9"/>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content"
+
+    android:background="#7E7575">
+
+    <ImageView
+        android:id="@+id/alam_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_baseline_access_alarms_24"
+        app:layout_constraintBottom_toBottomOf="@+id/txtListElement"
+        app:layout_constraintEnd_toStartOf="@+id/txtListElement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtListElement" />
+
+    <TextView
+        android:id="@+id/txtListElement"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="learn java programming"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_1"
+        app:layout_constraintEnd_toStartOf="@+id/edit_1"
+        app:layout_constraintStart_toEndOf="@+id/alam_1"
+        app:layout_constraintTop_toTopOf="@+id/edit_1" />
+
+    <ImageView
+        android:id="@+id/edit_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_edit_24"
+        app:layout_constraintBottom_toBottomOf="@+id/delete_1"
+        app:layout_constraintEnd_toStartOf="@+id/delete_1"
+        app:layout_constraintStart_toEndOf="@+id/txtListElement"
+        app:layout_constraintTop_toTopOf="@+id/delete_1" />
+
+    <ImageView
+        android:id="@+id/delete_1"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_delete_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_1"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
