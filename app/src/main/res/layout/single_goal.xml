@@ -7,7 +7,7 @@
     android:layout_marginBottom="5dp"
     android:layout_height="wrap_content"
 
-    android:background="#7E7575">
+    android:background="#BDA8A8">
 
     <ImageView
         android:id="@+id/alam_1"
