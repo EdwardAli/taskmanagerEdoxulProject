@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/registration"
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_dack_person_24"
+            />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/menuImage"
+            android:layout_width="49dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_dack_menu_24" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal_200"
+        android:layout_below="@+id/layoutToolbar"
+        >
+        <Button
+            android:id="@+id/toGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goal"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/toActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/toGoal"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/toFitness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitiness"
+            android:layout_below="@+id/toActivity"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/toReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder"
+            android:layout_below="@+id/toFitness"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

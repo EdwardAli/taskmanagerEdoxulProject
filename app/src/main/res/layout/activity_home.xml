@@ -90,7 +90,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="152dp"
                             android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_goal" />
+                            android:src="@drawable/ic_dack_person_24" />
 
                         <TextView
                             android:layout_width="131dp"
@@ -132,7 +132,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="152dp"
                             android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_activity" />
+                            android:src="@drawable/ic_dack_person_24" />
 
                         <TextView
                             android:layout_width="131dp"
@@ -175,7 +175,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="152dp"
                             android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_baseline_fitness_center_24" />
+                            android:src="@drawable/ic_dack_person_24" />
 
                         <TextView
                             android:layout_width="131dp"
@@ -218,7 +218,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="152dp"
                             android:layout_gravity="center_vertical"
-                            android:src="@drawable/ic_baseline_access_alarms_24" />
+                            android:src="@drawable/ic_dack_person_24" />
 
                         <TextView
                             android:layout_width="131dp"
